@@ -1,0 +1,4 @@
+# Learning rates
+alpha: 0.001  # Average reward update rate
+lr_critic: 0.001  # Critic learning rate
+lr_actor: 0.001  # Actor learning rate

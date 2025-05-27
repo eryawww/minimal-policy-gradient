@@ -1,0 +1,12 @@
+# Learning rates
+alpha: 0.001  # Average reward update rate
+lr_critic: 0.001  # Critic learning rate
+lr_actor: 0.001  # Actor learning rate
+
+# Regularization
+grad_clip_norm: 0.5  # Gradient clipping norm
+lambda_v: 0.5  # Critic L2 regularization coefficient
+lambda_entropy: 5.0  # Actor entropy regularization coefficient
+
+# Model architecture
+hidden_dim: 16  # Hidden dimension for MLP

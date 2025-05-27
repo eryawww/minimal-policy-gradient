@@ -1,0 +1,5 @@
+# Training settings
+training:
+  t_max: 15_000
+  log_interval: 500
+  num_episodes: 10
