@@ -1,4 +1,16 @@
-# Work Under Progress
+# Minimal Policy Gradient 🚀
+
+Welcome to Minimal Policy Gradient - a clean, educational implementation of policy gradient algorithms in reinforcement learning! This project aims to demystify the core concepts of policy gradient methods through clear, well-documented code and intuitive explanations.
+
+## Why Minimal Policy Gradient? 🤔
+
+- **Educational Focus**: Perfect for learning the fundamentals of policy gradient methods
+- **Clean Implementation**: No unnecessary complexity, just the core algorithms
+- **Multiple Algorithms**: Compare different approaches from basic to advanced
+- **Visual Insights**: Includes visualization tools to understand algorithm behavior
+- **Research Ready**: Easy to extend and modify for your own experiments
+
+## Work Under Progress ⚠️
 
 This project is currently under active development. The documentation and implementation may change as development continues.
 
@@ -8,7 +20,7 @@ This project is currently under active development. The documentation and implem
 - Testing and validation
 - Documentation updates
 
-# Setup Guide
+## Setup Guide 🛠️
 
 1. Clone the Repository
 ```bash
@@ -36,7 +48,7 @@ python env.py
 python xprmt.py
 ```
 
-# Technical Documentation
+## Technical Documentation 📚
 
 ## Algorithm
 
@@ -60,9 +72,9 @@ The Exhaustive Policy Search algorithm performs a complete search over all possi
 
 **Code Reference:** @agent.py: `class ExhaustiveAgent` (lines 544-580)
 
-# Improvement
+## Improvement 💡
 
-## Regularization for avoiding critic hack
+### Regularization for avoiding critic hack 🛡️
 The critic hack problem occurs when the critic's value function becomes too optimistic, leading to poor policy updates. To address this, we implement L2 regularization on the critic's parameters. This regularization term penalizes large parameter values, preventing the critic from overestimating state values and ensuring more stable learning. The regularization strength is controlled by the hyperparameter λ_v, which balances between accurate value estimation and preventing overfitting.
 
 **Mathematical Formulation:**
@@ -99,7 +111,5 @@ where:
   $$
   where $p$ is the probability of taking action 1.
 
-
-# TODO
-1. Cartpole only has reward of 1. Manage how to handle this with done to inform agent that
-environment end fast is bad.
+## TODO 📝
+1. Cartpole only has reward of 1. Manage how to handle this with done to inform agent that environment end fast is bad.
